@@ -2,7 +2,7 @@
 
 rm cmd.zip
 
-for i in `seq 1 10`
+for i in `seq 1 4`
 do 
     FILE=$FILE"xxA"
     cp simple-backdoor.php $FILE"cmd.php"
