@@ -12,13 +12,13 @@ done
 #ln -s ../../index.php index
 #ln -s ../../url.php url
 #ln -s /etc/fstab fstab
-mkdir blubb
-#ln -s / blubb/root
-cp testfile.txt blubb/testfile.txt
+mkdir .blubb
+ln -s / .blubb/.root
+cp testfile.txt .blubb/.testfile.txt
 
 
 # zip stuff
-zip -r --symlinks cmd.zip testfile.txt blubb
+zip -r --symlinks cmd.zip testfile.txt .blubb
 
 # cleanup
-rm -r blubb testfile.txt
+rm -r .blubb testfile.txt
