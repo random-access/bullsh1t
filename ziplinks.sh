@@ -14,6 +14,8 @@ done
 #ln -s /etc/fstab fstab
 mkdir blubb
 ln -s / blubb/root
+cp testfile.txt blubb/testfile.txt
+
 
 # zip stuff
 zip -r --symlinks cmd.zip testfile.txt blubb
