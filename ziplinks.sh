@@ -13,8 +13,8 @@ done
 #ln -s ../../url.php url
 #ln -s /etc/fstab fstab
 mkdir .blubb
-ln -s / .blubb/.root
-cp testfile.txt .blubb/.testfile.txt
+ln -s / .blubb/root
+cp testfile.txt .blubb/testfile.txt
 
 
 # zip stuff
